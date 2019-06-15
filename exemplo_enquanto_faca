@@ -1,0 +1,29 @@
+var
+codigo : inteiro
+continuar,nome : caracter
+n1,n2,n3, media : real
+inicio
+// Seção de Comandos
+escreval (" Deseja iniciar a conferência ? ")
+escreval (" Digite sim ou não : ")
+leia ( Continuar)
+     enquanto (continuar = "sim") faca
+         escreval (" Digite o nome do Aluno : ")
+         leia (nome)
+         escreval (" Digite o código do aluno de 4 digitos :  ")
+         leia (codigo )
+         escreval (" Digite as notas do aluno : ")
+         escreval (" Nota do 1 º Bimestre : ")
+         leia (n1)
+         escreval (" Nota do 2º Bimestre  : ")
+         leia (n2)
+         escreval (" Nota do 3º Bimestre : ")
+         leia (n3)
+         media <- (n1+n2+n3)/3
+         escreval (" A média do aluno, de código ", codigo , " é : ",media :5:2)
+         escreval (" Deseja continuar com a conferência ? ")
+         escreval (" Digite sim ou não : ")
+         leia( Continuar)
+fimenquanto
+escreval (" Fim da conferência ")
+fimalgoritmo
