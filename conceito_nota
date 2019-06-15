@@ -1,0 +1,47 @@
+var
+nota1,nota2,nota3, media, total : real
+nome : caracter
+id : inteiro
+
+inicio
+para id de 1 ate 15 passo 1 faca
+   escreval (" ---------------------------------------------------------------")
+   escreval (" ID chamada do aluno : ", ID )
+   escreva (" Digite o nome do Aluno : ")
+   leia (nome)
+   Escreval (" Digite as notas (n1,n2 e n3): ")
+   escreval (" Digite n1 : ")
+   leia (nota1)
+   escreval (" Digite n2 : ")
+   leia (nota2)
+   escreval (" Digite n3 : ")
+   leia (nota3)
+   total <- nota1 + nota2 + nota3
+   escreval ( " Valor total das notas do aluno: " , total )
+   media <- total/3 4:2
+   escreval (" Média das notas do aluno : ", media :5:2 )
+   se (media >0)e (media <=4) entao
+      escreval (" Conceito D ")
+   senao
+      se (media >= 5)e (media <=7) entao
+         escreval ("Conceito B ")
+      senao
+         se (media >= 7.1)e (media <=8) entao
+            escreval (" Conceito B+ ")
+         senao
+            se (media >=8.1)e (media <=9) entao
+               escreval (" Conceito A ")
+            senao
+               se  (media >=9.1)E (media <=10) entao
+                  escreval (" Conceito A+ ")
+               senao
+                  se (media <0) entao
+                     escreval (" Invalido")
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimpara
+fimalgoritmo
