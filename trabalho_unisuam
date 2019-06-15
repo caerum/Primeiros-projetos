@@ -1,0 +1,57 @@
+Var
+qtd_prod : inteiro
+produto, i1,i2,i3 : caractere
+qtdi1,qtdi2,qtdi3 : real
+
+inicio
+
+escreval (" Digite o nome do produto ")
+leia (produto)
+
+escreval (" Primeiro Ingrediente ")
+leia (i1)
+escreval (" Digite a quantidade do primeiro ingrediente ")
+leia (qtdi1)
+
+escreval (" -----------------------------------------------------------")
+
+escreval (" Segundo ingrediente ")
+leia (i2)
+escreval (" Digite a quantidade do segundo ingrediente ")
+leia (qtdi2)
+
+escreval ("------------------------------------------------------------")
+
+escreval (" terceiro ingrediente ")
+leia(i3)
+escreval ("Digite a quantidade do terceiro igrediente ")
+leia (qtdi3)
+
+escreval (" ---------------------------------------------------------------")
+
+escreval (" Quantas receitas do produto é produzida por semana ? ")
+leia (qtd_prod )
+
+qtdi1 <- qtdi1*qtd_prod
+qtdi2 <- qtdi2*qtd_prod
+qtdi3 <- qtdi3*qtd_prod
+
+
+escreval (" Para o produto ", produto , " Por semana : "  )
+escreval ( " ---------------------------------------------------------------")
+escreval (" São necessários ", qtdi1 , " de " , i1 , " por semana ")
+escreval (" São necessários " , qtdi2 , " de " , i2 , " por semana ")
+escreval (" São necessários " , qtdi3 , " de " , i3 , " por semana ")
+escreval (" -----------------------------------------------------------------")
+
+escreval ( " Para o produto " , produto , " por mês : ")
+escreval (" ---------------------------------------------------------------")
+escreval (" são necessários ", qtdi1*4, " de " , i1 , " por mês ")
+escreval (" são necessários ", qtdi2*4, " de " , i2 , " por mês ")
+escreval (" São ncessários " , qtdi3*4, " de " , i3, " por mês ")
+escreval (" -----------------------------------------------------------------")
+
+
+
+
+Fimalgoritmo
