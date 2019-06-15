@@ -1,0 +1,17 @@
+var
+  base, valor, resultado : inteiro
+inicio
+para base de 1 ate 10 faca
+repita
+  Escreval("Digite a base da tabuada: ")
+  Leia(base)
+ ate (base >= 1)
+ Escreval("Tabuada do ",base)
+ valor <- 0
+ enquanto (valor <= 10) faca
+  resultado <- base * valor
+  Escreval(base," x",valor," =",resultado)
+  valor <- valor + 1
+ fimenquanto
+ fimpara
+fimalgoritmo
