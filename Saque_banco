@@ -13,7 +13,7 @@ saldo <- 1000
 escreval (" Informe o valor do saque ")
 leia (valor_saque)
 saldo <- saldo-valor_saque
-se (valor_saque > 0) e (valor_saque >= saldo)entao
+se (valor_saque > 0) e (valor_saque <= saldo)entao
    escreval (" Saque efetuado com sucesso, retire seu dinheiro ")
    escreval (" Saldo atual é : ",saldo)
    escreval ( " saque seu dinheiro, retire o cartão e aguarde o comprovante ")
