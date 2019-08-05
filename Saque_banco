@@ -4,24 +4,25 @@ inicio
 // Seção de Comandos 
 
 escreval ("Seja bem vindo ao nosso banco! ")
-escreval ("--------------------------------------------------------")
-escreval (" Informe o numero da sua agência ")
-leia( num_agencia)
-escreval ("Informe o numero da sua conta ")
-leia (num_conta)
-saldo <- 1000
-escreval (" Saldo atual : ",saldo)
-escreval (" Informe o valor do saque ")
-leia (valor_saque)
-saldo <- saldo-valor_saque
-se (valor_saque > 0) e (valor_saque >= saldo)entao
-   escreval (" Saque efetuado com sucesso, retire seu dinheiro ")
-   escreval (" Saldo atual é : ",saldo)
-   escreval ( " saque seu dinheiro, retire o cartão e aguarde o comprovante ")
-senao
-            se (valor_saque > saldo) entao
-               escreval(" Saldo insuficiente para saque. Não foi possivel realizar a operação")
-               escreval (" Retire o cartão e aguarde o comprovante")
-            fimse
-fimse
+   escreval ("--------------------------------------------------------")
+   escreval (" Informe o numero da sua agência ")
+   leia( num_agencia)
+   escreval ("Informe o numero da sua conta ")
+   leia (num_conta)
+   saldo <- 1000
+   escreval (" Saldo atual : ",saldo)
+   escreval (" Informe o valor do saque ")
+   leia (valor_saque)
+   se (valor_saque > 0) e (valor_saque <= saldo)entao
+   saldo <- saldo - valor_saque
+      escreval (" Saque efetuado com sucesso, retire seu dinheiro ")
+      escreval (" Saldo atual é : ",saldo)
+      escreval ( " saque seu dinheiro, retire o cartão e aguarde o comprovante ")
+      senao
+      se (valor_saque > saldo)entao
+      saldo <- saldo - valor_saque
+         escreval(" Saldo insuficiente para saque. Não foi possivel realizar a operação")
+         escreval (" Retire o cartão e aguarde o comprovante")
+      fimse
+   fimse
 fimalgoritmo
